@@ -64,7 +64,7 @@ npm start
 
 ### Test the Bridge
 
-1. Approve tokens:
+1. Approve tokens (already done):
 ```bash
 # On Holesky
 cast send --rpc-url $HOLESKY_RPC_URL --private-key $PRIVATE_KEY --etherscan-api-key $ETHERSCAN_API_KEY $HOLESKY_TOKEN_ADDRESS "approve" $HOLESKY_BRIDGE_ADDRESS "1000000000000000000000"
@@ -88,7 +88,7 @@ cast call --rpc-url $TARGET_CHAIN_RPC_URL $TARGET_CHAIN_TOKEN_ADDRESS "balanceOf
 
 * Address: `0x2d172085765cDdA0A1F353dc2E2e0A4185601DF3`
 * Private Key: `0xf0dfaf891e134ee9688ebe7116b508d360fbb2040264fd5da8bd62eb4c64b085`
-* Wait 3-5 minutes for transfers to complete (15 confirmations required)
+* Wait 3-5 minutes for transfers to complete (15 confirmations required), if the indexer is started again later, old logs that were pending are showed, to do when it takes a long time to complete 
 
 ---
 
@@ -152,7 +152,7 @@ npm start
 
 ### Tester le Bridge
 
-1. Approuver les tokens :
+1. Approuver les tokens (c'est déjà fait) :
 ```bash
 # Sur Holesky
 cast send --rpc-url $HOLESKY_RPC_URL --private-key $PRIVATE_KEY --etherscan-api-key $ETHERSCAN_API_KEY $HOLESKY_TOKEN_ADDRESS "approve" $HOLESKY_BRIDGE_ADDRESS "1000000000000000000000"
@@ -176,4 +176,4 @@ cast call --rpc-url $TARGET_CHAIN_RPC_URL $TARGET_CHAIN_TOKEN_ADDRESS "balanceOf
 
 * Adresse : `0x2d172085765cDdA0A1F353dc2E2e0A4185601DF3`
 * Clé Privée : `0xf0dfaf891e134ee9688ebe7116b508d360fbb2040264fd5da8bd62eb4c64b085`
-* Attendez 3-5 minutes pour que les transferts se terminent (15 confirmations requises)
+* Attendez 3-5 minutes pour que les transferts se terminent (15 confirmations requises), si l'indexeur est relancé on peut voir les actions faites precedemments, à faire si c'est long
