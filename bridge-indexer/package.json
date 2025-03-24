@@ -1,0 +1,27 @@
+{
+  "name": "bridge-indexer",
+  "version": "1.0.0",
+  "description": "Cross-chain bridge indexer",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "blockchain",
+    "bridge",
+    "ethereum"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^8.6.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0",
+    "node-cron": "^3.0.2",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
