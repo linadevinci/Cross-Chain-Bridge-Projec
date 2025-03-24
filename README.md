@@ -64,7 +64,7 @@ npm start
 
 ### Test the Bridge
 
-1. Approve tokens (already done):
+1. Approve tokens (i do it everytime but i dont think its necessary):
 ```bash
 # On Holesky
 cast send --rpc-url $HOLESKY_RPC_URL --private-key $PRIVATE_KEY --etherscan-api-key $ETHERSCAN_API_KEY $HOLESKY_TOKEN_ADDRESS "approve" $HOLESKY_BRIDGE_ADDRESS "1000000000000000000000"
@@ -152,7 +152,7 @@ npm start
 
 ### Tester le Bridge
 
-1. Approuver les tokens (c'est déjà fait) :
+1. Approuver les tokens (je le fais à chaque fois mais je ne pense pas que ça soit nécessaire) :
 ```bash
 # Sur Holesky
 cast send --rpc-url $HOLESKY_RPC_URL --private-key $PRIVATE_KEY --etherscan-api-key $ETHERSCAN_API_KEY $HOLESKY_TOKEN_ADDRESS "approve" $HOLESKY_BRIDGE_ADDRESS "1000000000000000000000"
